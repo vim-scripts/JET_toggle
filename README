@@ -1,0 +1,53 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1973
+
+<!-- === START_DOC
+*JET_toggle.txt*           Plugin to dynamically add toggles #version#
+
+
+                         JET_TOGGLE REFERENCE MANUAL~
+
+
+
+
+
+==============================================================================
+CONTENTS {{{2                                        *JET_togglelist-contents* 
+
+    1. Intro ................................... |JET_toggle|
+    2. How to add a toggle ..................... |JET_toggle-howto|
+    3. Feedback ................................ |JET_toggle-feedback|
+
+==============================================================================
+1. Intro {{{2                                                     *JET_toggle*
+
+    JET_toggle provides a mechanism for adding toggle commands and mapping
+  them to a shortcut.
+
+==============================================================================
+2. How to add a toggle {{{2                                 *JET_toggle-howto*
+
+  Source the script from your .vimrc, and then add whatever toggles you want.
+  
+
+  Syntax:
+  
+    JET_AddToggle(':someCommandString', ':someOtherCommandString', '<keymap>')
+  
+  
+  Example:
+  
+    source ~/.vim/plugin/JET_toggle.vim
+    JET_AddToggle(':set list', ':set nolist', '<C-l>')
+    JET_AddToggle(':set paste', ':set nopaste', '<M-p>')
+  
+
+    Then, when you type control-l it will toggle between ':set list' and
+  ':set nolist' and when you type alt-p it will toggle between ':set paste'
+  and ':set nopaste'.
+  
+==============================================================================
+3. Feedback {{{2                                         *JET_toggle-feedback*
+
+  Constructive feedback is welcome, send it to outtatime.at-symbol.gmail.com
+  with [JET_toggle] in the subject line.  Enjoy!
+-->
